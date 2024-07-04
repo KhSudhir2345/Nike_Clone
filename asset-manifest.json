@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Nike_Clone/static/css/main.fc19d1d8.css",
+    "main.js": "/Nike_Clone/static/js/main.adacdea3.js",
+    "index.html": "/Nike_Clone/index.html",
+    "main.fc19d1d8.css.map": "/Nike_Clone/static/css/main.fc19d1d8.css.map",
+    "main.adacdea3.js.map": "/Nike_Clone/static/js/main.adacdea3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc19d1d8.css",
+    "static/js/main.adacdea3.js"
+  ]
+}
