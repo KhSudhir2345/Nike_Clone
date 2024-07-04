@@ -5,9 +5,224 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F7F7F7;
+  overflow: auto;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+button:hover{
+  cursor: pointer;
+}
+.topnav{
+  padding: 0px 48px;
+  width: 1654px;
+  height: 40px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  height: 60px;
+  background-color: white;
+  align-items: center;
+  position: relative;
+  top: 30px;
+}
+
+.navbar .logo img{
+  height: 25px;
+  width: 60px;
+  object-fit: contain;
+}
+
+.navbar .categories{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+}
+.navbar .categories a{
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .functions img{
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.navbar .functions{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.navbar .functions .searchbar input{
+    height: 30px;
+    border-radius: 10px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.products .Left-Nav{
+  /* position: fixed; */
+  left: 0;
+  width: 240px;
+  padding: 0px 0px 16px 48px;
+  margin-top: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow-y: auto;
+}
+.products .leftnav{
+  display: flex;
+  flex-direction: column;
+}
+.products .leftnav .filters{
+  overflow-y: auto;
+}
+.products #pickup{
+    height: 51px;
+    padding: 0px 0px 20px;
+    margin: 0px 0px 20px;
+}
+.products .categories a{
+  font-size: 16px;
+  margin: 0px 0px 0px 4px;
+  padding: 0px 17.6px 10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  position: relative;
+  left: 0;
+  width: fit-content;
+}
+.products .categories{
+  padding: 0px 0px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.products .filters .filter-group{
+  padding: 12px 0px;
+  font-size: 16px;
+  width: fit-content;
+}
+
+.home{
+  display: flex;
+}
+.products_display{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  width: 100%;
+  box-shadow: grey;
+}
+.grid-item img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.grid-item p{
+  text-decoration: none;
+  color: black;
+}
+.grid-item a{
+  text-decoration: none;
+  color: black;
+}
+.grid-item{
+  padding: 0px 8px 0px 0px;
+  border: 0.05px solid grey;
+}
+
+.productList{
+  width: 100%;
+  position: relative;
+  /* left: 285px; */
+}
+.ProductDetails{
+  display: flex;
+
+}
+.ProductDetails .product_image{
+  width: 728px;
+  height: 669px;
+  margin: 48px 8px 0px;
+  padding: 0px 0px 0px 48px;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.ProductDetails .product_image img{
+  height: 100%;
+  width: 545px;
+  object-fit: cover;
+}
+
+.ProductDetails .size_and_details{
+  width: 448px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.ProductDetails .size_and_details button{
+  position: relative;
+  top: 50px;
+  width: 184px;
+  height: 62px;
+  padding: 18px 24px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ProductDetails .size_and_details #Add_to_Bag{
+  color: white;
+  background-color: black;
+  width: 362px;
+}
+.ProductDetails .size_and_details #Favourite img{
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+}
+.ProductDetails .size_and_details #Favourite{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 362px;
+}
+.ProductDetails #Price{
+  margin: 0px 0px 12px;
+}
+.Sizes{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  bottom: 30px;
+}
+
+.Sizes button{
+  border-radius: 4px;
+  border: 0.5px solid grey;
+  background-color: white;
+}
+.Sizes .highlighted{
+  border: 2px solid black;
 }

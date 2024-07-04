@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import TopNav from './top-navbar';
+import Navbar from './navbar';
+import HomePage from './HomePage';
+import ProductList from './productlist';
 import './App.css';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import ProductDetails from './ProductDetals';
+import { useSelector } from 'react-redux';
+import Auth from './components/Auth';
+import CartItems from './components/cartItems';
+import FavItems from './components/favItems';
 
 function App() {
+  const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        {!isLoggedIn && <Auth />}
+        {isLoggedIn && (
+          <>
+            <TopNav />
+            <Navbar />
+            <Routes>
+              <Route path='/' element={<HomePage />} />
+              <Route path='/products' element={<ProductList />} />
+              <Route path='/products/:id' element={<ProductDetails />} />
+              <Route path='/cart' element={<CartItems />} />
+              <Route path='/favourites' element={<FavItems />} />
+            </Routes>
+          </>
+        )}
+      </div>
+    </Router>
   );
 }
 
