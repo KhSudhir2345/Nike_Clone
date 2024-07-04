@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+Nike Clone Website
+This project is a clone of the Nike website, featuring functionalities like cart management, favorites, and user authentication (login and logout). The project fetches data from a db.json file, which is used to create a REST API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Cart Management: Add items to the cart, view cart items, and remove items from the cart.
+Favorites: Add items to favorites, view favorite items, and remove items from favorites.
+User Authentication: Login and logout functionalities. The default username for first-time login is user1 and the password is Username123.
+Data Fetching: Fetches product data from db.json.
+Getting Started
+Prerequisites
+npm: Node package manager comes with Node.js. Verify installation by running npm -v in your terminal.
+Installation
+Clone the Repository:
 
-## Available Scripts
+bash
+Copy code
+git clone https://github.com/yourusername/nike-clone.git
+cd nike-clone
+Install Dependencies:
 
-In the project directory, you can run:
+bash
+Copy code
+npm install
+Start JSON Server:
 
-### `npm start`
+bash
+Copy code
+npx json-server --watch db.json --port 8000
+Start the React Application:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm start
+Usage
+Login:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Navigate to the login page.
+Use the default credentials:
+Username: user1
+Password: Username123
+After successful login, you will be redirected to the home page.
+Browse Products:
 
-### `npm test`
+Browse the products available on the website fetched from db.json.
+Add to Cart:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Click on a product to view details.
+Add the product to your cart.
+View Cart:
 
-### `npm run build`
+Click on the cart icon to view items in your cart.
+You can remove items from the cart.
+Add to Favorites:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click on the favorite icon on a product to add it to your favorites list.
+View Favorites:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Click on the favorites icon to view your favorite items.
+You can remove items from your favorites list.
+Logout:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Click on the logout button to log out from your account.
 
-### `npm run eject`
+Dependencies
+React: Front-end library for building user interfaces.
+Redux: State management library.
+React-Redux: Official React bindings for Redux.
+React Router: Library for routing in React applications.
+JSON Server: Full fake REST API with zero coding.
+react-toastify: Library for notifications.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Acknowledgements
+Inspired by the Nike official website.
+Built with React and Redux.
